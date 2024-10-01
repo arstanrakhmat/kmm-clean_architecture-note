@@ -26,10 +26,8 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
-            dependencies {
-                implementation(libs.sqldelightRuntime)
-                implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
-            }
+            implementation(libs.sqldelightRuntime)
+            implementation(libs.kotlinxDatetime)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
